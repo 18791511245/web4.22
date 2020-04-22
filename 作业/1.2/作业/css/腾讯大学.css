@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.q1{
+	width: 1200px;
+	height: 72px;
+	margin: auto;
+	/*background-color: saddlebrown;*/
+	overflow: hidden;
+}
+.q2{
+	width: 140px;
+	height: 40px;
+	background-image: url(../img/首页/1.png);
+	background-size: 100% 100%;
+	margin-top: 16px;
+	float: left;
+	cursor: pointer;
+}
+.q3{
+	margin-left: 100px;
+	float: left;
+}
+.q3 li{
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	margin-right:70px;
+	font-size: 14px;
+	line-height: 72px;
+	color: #353535;
+}
+.q3 li:hover{
+	color: #2a75ed;
+}
+
+.q4{
+	float: right;
+	font-size: 14px;
+	line-height: 72px;
+	color: #2a75ed;
+	/*margin-right: 20px;*/
+	cursor: pointer;
+}
+
+
+
+.ww{
+	width: 100%;
+	height: 3000px;
+	background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.w1{
+	height: 448px;
+	width: 1200px;
+	margin: auto;
+	background-image: url(../img/首页/2.png);
+	/*overflow: hidden;*/
+	margin-top: 20px;
+	
+}
+.w2{
+	width: 238px;
+	height: 446px;
+	background: rgba(53,53,53,.7);
+	border: 1px solid rgba(53,53,53,.7);
+	/*overflow: hidden;*/
+	/*border: 1px solid red;*/
+}
+.w3{
+	width: 240px;
+	height:300px;
+	/*margin-top: 20px;*/
+	/*overflow: hidden;*/
+	position: relative;
+	/*border: 1px dashed rgba(53,53,53,.7);*/
+}
+.w3 ul{
+    margin-top: 20px;
+    margin-left: -1px;
+}
+.w3 li{
+	list-style: none;
+	line-height: 50px;
+	/*margin-left: 30px;*/
+	/*margin-top:20px ;*/
+	height: 50px;
+
+	color: white;
+    
+}
+.w3 li:hover{
+	background-color: #2A75ED;
+}
+.w4{
+	margin-left: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	
+}
+.w5{
+	width: 240px;
+	height: 448px;
+	background-color: white;
+	position: absolute;
+	/*margin-left: 200px;*/
+	left: 240px;
+    top:-21px;
+    display: none;
+}
+.w6{
+	color: #353535;
+	line-height: 5px;
+	margin-top: 33px;
+	font-size: 13px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.w7{
+	line-height: 5px;
+	font-size: 13px;
+	color: #b0b0b0;
+	margin-top: 15px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.w8{
+	color: #353535;
+	line-height: 5px;
+	margin-top: 45px;
+	font-size: 13px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.w3 li:hover .w5{
+	display: block;
+}
+.w9{
+	color: #353535;
+	line-height: 5px;
+	margin-top: 65px;
+	font-size: 13px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.w10{
+	color: #353535;
+	line-height: 5px;
+	margin-top: 0px;
+	font-size: 13px;
+	margin-left: 20px;
+	cursor: pointer;
+	
+}

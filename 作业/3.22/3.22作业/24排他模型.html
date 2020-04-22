@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 550px;
+				height: 100px;
+				border: 1px solid bisque;
+			}
+			p{
+				width: 80px;
+				height: 80px;
+				float: left;
+				border-radius: 50%;
+				margin: 10px;
+				background-color: saddlebrown;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="ss"></h1>
+		<div id="dd">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<script type="text/javascript">
+		/*	var ss=document.getElementById("ss");
+			var dd=document.getElementById("dd").getElementsByTagName("p");
+			for (var i=0;i<dd.length;i++){
+				dd[i].index=i;
+				dd[i].onmouseover=function(){
+					for (var j=0;j<dd.length;j++) {
+						dd[j].style.backgroundColor="saddlebrown";
+						
+					}
+					this.style.backgroundColor="blue";
+					ss.innerHTML=this.index;
+				}
+			}*/
+			
+			
+				var ss=document.getElementById("ss");
+			var dd=document.getElementById("dd").getElementsByTagName("p");
+			for (var i=0;i<dd.length;i++){
+				dd[i].index=i;
+				dd[i].onmouseover=function(){
+					for (var j=0;j<dd.length;j++) {
+						dd[j].style.backgroundColor="saddlebrown";	
+					}
+					this.style.backgroundColor="blue";
+					ss.innerHTML=this.index;
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			div{
+				width: 60px;
+				height: 60px;
+				background-color: red;
+				position: absolute;
+				top: 100px;
+				left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="" value="开始" />
+		<input type="button" id="" value="暂停" />
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript">
+			var obx=document.getElementById("box");
+			var ks=document.getElementsByTagName("input")[0];
+			var js=document.getElementsByTagName("input")[1];
+			var left=150;
+			var timer;
+			ks.onclick=function(){
+				clearInterval(timer);
+				timer=setInterval(function(){
+					left+=3;
+					obx.style.left=left+"px";
+				},50)
+			}
+			js.onclick=function(){
+				clearInterval(timer);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.zzz{
+				width: 550px;
+				height: 300px;
+				margin: 100px auto;
+				position: relative;
+				
+			}
+			.zzz ul{
+				list-style: none;
+			}
+			.zzz ul li{
+				display: none;
+			}
+			img{
+				width: 550px;
+				height: 350px;
+				background-size: 100% 100%;
+			}
+			.zzz ul li.ccc{
+				display: block;
+			}
+			.zzz span{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 150px;
+			cursor: pointer;
+			background-color: darkgrey;
+		    }
+		    .nnn{
+		    	left: 500px;
+		    }
+		    .mmm{
+			position: absolute;
+			bottom: -30px;
+			width: 150px;
+			height: 20px;
+			left: 50%;
+			margin-left: -70px;
+		    }
+		    .mmm ol{
+			list-style: none;
+		    }
+		    .mmm ol li{
+		 	width: 20px;
+			height: 20px;
+			background-color: grey;
+			border-radius: 50%;
+			cursor: pointer;
+			margin-right: 10px;
+			float: left;
+	      	}
+		    .mmm ol li.ccc{
+			background-color: red;
+		    }
+	     	.vvv span{
+			text-align: center;
+			line-height: 50px;
+			font-size: 18px;
+			color: white;
+			background-color: darkgray;
+	     	}
+		    .vvv span:hover{
+			opacity: 0.5;
+	    	}
+		    .mmm ol li{
+			background-color: grey;
+	     	}
+	     	
+		</style>
+	</head>
+	<body>
+		<div class="zzz">
+			<div id="xxx" class="xxx">
+	       		<ul>
+	       			<li class="ccc"><a href=""><img src="img/01.jpg"></a></li>
+	       			<li><a href=""><img src="img/02.jpg"></a></li>
+	       			<li><a href=""><img src="img/03.jpg"></a></li>
+	       			<li><a href=""><img src="img/04.jpg"></a></li>
+	       			<li><a href=""><img src="img/05.jpg"></a></li>
+	       		</ul>
+		    </div>
+		    
+			<div class="vvv">
+	       		<span class="bbb" id="bbbleft"><</span>
+	       		<span class="nnn" id="nnnright">></span>
+	       	</div>
+	       	
+	       	<div id="mmm" class="mmm">
+	       		<ol>
+	       			<li class="ccc"></li>
+	       			<li></li>
+	       			<li></li>
+	       			<li></li>
+	       			<li></li>
+	       		</ol>
+	       	</div>
+	      </div>
+	      <script type="text/javascript">
+	      	var bbbleft=document.getElementById("bbbleft");
+	      	var nnnright=document.getElementById("nnnright");
+	      	var mm=document.getElementById("mmm").getElementsByTagName("li");
+	      	var xx=document.getElementById("xxx").getElementsByTagName("li");
+	      	var imgindex=0;
+	      	nnnright.onclick=function(){
+	      		imgindex++;
+	      		if (imgindex>4){
+	      			imgindex=0;
+	      		}
+	      		changPic();
+	      	}
+	      	bbbleft.onclick=function(){
+	      		imgindex--;
+	      		if (imgindex<0){
+	      			imgindex=4;
+	      		}
+	      		changPic()
+	      	}
+	      	for (let i=0;i<mm.length;i++){
+	      		mm[i].onmouseover=function(){
+	      			imgindex=i;
+	      			changPic()
+	      		}
+	      	}
+	      	function changPic(){
+	      		for (var i=0;i<xx.length;i++){
+	      			xx[i].className="";
+	      		}
+	      		xx[imgindex].className="ccc";
+	      		for (var i=0;i<mm.length;i++){
+	      			mm[i].className="";
+	      		}
+	      		mm[imgindex].className="ccc";
+	      	}
+	      </script>
+	</body>
+</html>

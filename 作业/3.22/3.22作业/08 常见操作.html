@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="boo"></div>
+		<button onclick="btnClickedHandler()">去除h1</button>
+		<script type="text/javascript">
+			/*(function(){
+				var div,h1;
+				function init(){
+					div=document.getElementById('boo');
+					h1=document.createElement('h1');
+					h1.innerHTML="标题1";
+					div.appendChild(h1);
+					h1.onclick=function(){
+						console.log("我被点击了");
+						
+					}
+				}
+			    init();
+			    window.btnClickedHandler=function(){
+			    	if(h1){
+			    		div.removeChild(h1);
+			    		h1=null;
+			    	}
+			    }
+			}())*/
+			
+			
+			(function(){
+				var div,h1;
+				function init(){
+					div=document.getElementById('boo');
+					h1=document.createElement('h1');
+					h1.innerHTML="标题1";
+					div.appendChild(h1);
+					h1.onclick=function(){
+						console.log("我被点击了");
+						
+					}
+				}
+			    init();
+			    window.btnClickedHandler=function(){
+			    	if(h1){
+			    		div.removeChild(h1);
+			    		h1=null;
+			    	}
+			    }
+			}())
+		</script>
+	</body>
+</html>

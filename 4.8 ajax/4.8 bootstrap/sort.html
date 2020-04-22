@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row boxCentent">
+				<div class="col-md-3">
+					<div class="item">
+						<img src="img/c1.jpg"/>
+						<span>title</span>
+						<div class="mask">
+						<h3 onclick="jump(a)">价钱：110</h3>
+						<p class="desc">阿松大沙发沙发沙发哥哥人参果啊沙发沙发沙发</p>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var str=location.search.substr(1).split("=")[1];
+			console.log(str)
+			$.ajax({
+				type:"get",
+				url:"",
+				async:true,
+				success:function(res){
+					var obj=res.data.
+					for (var i=0;i<obj.length;i++){
+						$(".boxCentent").append(
+							`<div class="col-md-3">
+					<div class="item">
+						<img src="${obj[i].icon}"/>
+						<span>${obj[i].createDate}</span>
+						<div class="mask">
+						<a href="sort.html？name=${obj[i].name}">${obj[i].name}</a>
+						
+					</div>
+					</div>
+					
+				</div>`
+						)
+						
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.qq{
+				width: 550px;
+				height: 300px;
+				border: 1px solid black;
+				position: relative;
+				margin: 100px auto;
+				overflow: hidden;
+				
+			}
+			div ul{
+				list-style: none;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			div ul li img{
+				width: 550px;
+				height: 301px;
+				background-size: 100% 100%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="qq">
+			<ul>
+				<li><img src="img/01.jpg"/></li>
+				<li><img src="img/02.jpg"/></li>
+				<li><img src="img/03.jpg"/></li>
+				<li><img src="img/04.jpg"/></li>
+				<li><img src="img/05.jpg"/></li>
+			</ul>
+		</div>
+		
+		<script src="js/animate-2.0.1.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+	    	var ull=document.getElementsByTagName("ul")[0];
+	    	var lii=document.getElementsByTagName("li");
+	    	var length=lii.length;
+	    	ull.innerHTML+=ull.innerHTML;
+	    	var index=0;
+	    	function move(){
+	    		index++;
+	    		animate(ull,{"top":-305*index},1000,function(){
+	    			if (index>length-1){
+	    				index=0;
+	    				this.style.top="0px";
+	    			}
+	    		})
+	    	}
+	    	setInterval(move,2000);
+	    </script>
+	
+	</body>
+</html>

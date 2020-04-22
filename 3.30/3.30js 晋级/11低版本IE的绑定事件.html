@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box1{
+				width:400px;
+				
+				height: 400px;
+				background-color: violet;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript">
+			var box1=document.getElementById("box1");
+		/*	box1.attachEvent("onclick",function(){
+				changeColor.call(box1)
+			})
+			function changeColor(){
+				this.style.backgroundColor="red";
+			}
+			*/
+			
+			box1.attachEvent("onclick",function(){
+				changeColor.call(box1)
+			})
+			function changeColor(){
+				this.style.backgroundColor="red";
+			}
+		</script>
+	</body>
+</html>

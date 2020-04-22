@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function fun(){
+				alert("你好")
+			}
+			console.log(fun.prototype)
+			console.log(typeof fun.prototype)*/
+			function People(){
+				this.name="小明";
+			}
+			People.prototype={
+				name:"小蒙",
+				sex:"女",
+				age:17
+			}
+			var xiaoming=new People();
+			console.log(xiaoming.__proto__);
+			console.log(xiaoming.__proto__===People.prototype);
+			console.log(xiaoming.name)
+			console.log(xiaoming.age)
+			console.log(xiaoming.sex)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 350px;
+				height: 300px;
+				border: 1px solid black;
+				margin-right: 10px;
+				float: left;
+			}
+			.tutu{
+				width: 350px;
+				height: 260px;
+				position: relative;
+			}
+			.tutu img{
+				width: 350px;
+				height: 260px;
+			}
+			.mask{
+				width: 100%;
+				height: 60px;
+				filter: alpha(opacity=60);
+				position: absolute;
+				opacity: 6;
+				left: 0;
+				bottom: 0;
+			}
+			.tutu h3{
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				color: white;
+			}
+			.info{
+				display: none;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 80px;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="tutu">
+				<img src="img/02.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>短剑重铸之日 其势归来之时</h3>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="box">
+			<div class="tutu">
+				<img src="img/03.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>吾日安在 无人能云</h3>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="box">
+			<div class="tutu">
+				<img src="img/04.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>无极之道 在我内心延续</h3>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/ jquery.smin.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*$(".box").mouseenter(function(){
+				$(this).find(".info").fadeIn(500);
+			})
+			$(".box").mouseenter(function(){
+				$(this).find(".info").fadeOut(500);
+			})*/
+			
+			
+			$(".box").mouseenter(function(){
+				$(this).find(".info").fadeIn(500);
+			})
+			$(".box").mouseenter(function(){
+				$(this).find(".info").fadeOut(500);
+			})
+		</script>
+		
+	</body>
+</html>

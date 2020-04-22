@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			div{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100px;
+				height: 100px;
+				background-color: salmon;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			
+		</div>
+		<script type="text/javascript">
+			var oDiv=document.getElementsByTagName("div")[0];
+			oDiv.onmousedown=function(){
+				var deX=event.clientX-oDiv.offsetLeft;
+				var deY=event.clientY-oDiv.offsetTop;
+				
+				document.onmousemove=function(event){
+					
+					oDiv.style.left=event.clientX-deX+"px";
+				    oDiv.style.top=event.clientY-deY+"px";
+				}
+			}
+			document.onmouseup=function(event){
+				document.onmousemove=null;
+			}
+			
+			/*oDiv.onmousedown=function(){
+				var deX=event.clientX-oDiv.offsetLeft;
+				var deY=event.clientY-oDiv.offsetTop;
+				
+				document.onmousemove=function(event){
+					
+					oDiv.style.left=event.clientX-deX+"px";
+				    oDiv.style.top=event.clientY-deY+"px";
+				}
+			}
+			document.onmouseup=function(event){
+				document.onmousemove=null;
+			}*/
+		</script>
+	</body>
+</html>

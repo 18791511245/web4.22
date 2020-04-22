@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<div id="yy">
+			<p><input type="checkbox" />11</p>
+			<p><input type="checkbox" />22</p>
+			<p><input type="checkbox" />33</p>
+			<p><input type="checkbox" />44</p>
+			<p><input type="checkbox" />55</p>
+			<p><input type="checkbox" />66</p>
+		</div>
+		<input type="button" value="选择" id="yy1"/>
+		<script type="text/javascript">
+			var yyy=document.getElementById("yy").getElementsByTagName("input");
+			var yyy1=document.getElementById("yy1");
+			var state=0;
+			yyy1.onclick=function(){
+				state = state == 0 ? 1 : 0;
+				var str = state == 0 ? '' : "checked";
+				this.value = state == 0 ? "全选" : "都不选" ;
+				for (var i=0;i<yyy.length;i++) {
+				yyy[i].checked=str;
+				}
+			}
+		</script>-->
+		
+		
+		<div id="yy">
+			<p><input type="checkbox" />11</p>
+			<p><input type="checkbox" />22</p>
+			<p><input type="checkbox" />33</p>
+			<p><input type="checkbox" />44</p>
+			<p><input type="checkbox" />55</p>
+			<p><input type="checkbox" />66</p>
+		</div>
+		<input type="button" value="选择" id="yy1"/>
+		<script type="text/javascript">
+			var yyy=document.getElementById("yy").getElementsByTagName("input");
+			var yyy1=document.getElementById("yy1");
+			var state=0;
+			yyy1.onclick=function(){
+				state = state == 0 ? 1 : 0;
+				var str = state == 0 ? '' : "checked";
+				this.value = state == 0 ? "全选" : "都不选" ;
+				for (var i=0;i<yyy.length;i++) {
+				yyy[i].checked=str;
+				}
+			}
+		</script>
+	</body>
+</html>

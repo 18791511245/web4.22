@@ -1,0 +1,32 @@
+.kz{
+	width:1120px ;
+	height: 3000px;
+	border: 1px solid black;
+}
+.toub{
+	width:1120px ;
+	height: 80px;
+	border: 1px solid black;
+	float: left;
+}
+.lo{
+	width: 236px;
+	height: 80px;
+	background-image: url(../img/6.png);
+	float: left;
+}
+
+a{
+	text-decoration: initial;
+	color: black;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+}
+
+.deh{
+	width: 1120px;
+	height: 520px;
+	background-image: url(../img/13.jpg);
+	float: left;
+}

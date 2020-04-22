@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div>账号：<input type="text" id="gg" placeholder="" /></div>
+		   <p></p>
+		<div>密码：<input type="password" id="hh" placeholder="" /></div>
+		   <p></p>
+		<div><input type="button" value="登录" id="jj"/></div>
+	    
+	<script type="text/javascript">
+	        var gg= document.getElementById("gg");
+			var hh = document.getElementById("hh");
+			var jj= document.getElementById("jj");
+			gg.onblur=function(){
+				var q=this.value;
+				if (a==""||a==undefined||a==null){
+					alert("输入框不能为空");
+				}else{
+					alert("登陆成功");
+				}
+			}
+			
+	</script>
+	
+	</body>
+</html>

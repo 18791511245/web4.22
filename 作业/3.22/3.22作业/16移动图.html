@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				position: absolute;
+				left: 100px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<table >
+			<tr>
+				<td><input type="button" id="tt1" value="左上"></td>
+				<td><input type="button" id="tt2" value="向上"></td>
+				<td><input type="button" id="tt3" value="右上"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="button" id="tt4" value="向左"></td>
+				<td></td>
+				<td><input type="button" id="tt5" value="向右"></td>
+				
+			</tr>
+			
+			<tr>
+				<td><input type="button" id="tt6" value="左下"></td>
+				<td><input type="button" id="tt7" value="向下"></td>
+				<td><input type="button" id="tt8" value="右下"></td>
+			</tr>
+		</table>
+		<img src="img/012.jpg" id="tuu" width="200px" height="130px" />
+		
+		<script type="text/javascript">
+			var otuu=document.getElementById("tuu");
+			var ttt1=document.getElementById("tt1");
+			var ttt2=document.getElementById("tt2");
+			var ttt3=document.getElementById("tt3");
+			var ttt4=document.getElementById("tt4");
+			var ttt5=document.getElementById("tt5");
+			var ttt6=document.getElementById("tt6");
+			var ttt7=document.getElementById("tt7");
+			var ttt8=document.getElementById("tt8");
+			
+			var nowleft=100;
+			var nowtop=100;
+			
+			ttt1.onclick=function(){
+	            nowleft-=10;
+	            nowtop-=10;
+	            move()
+            }
+            ttt2.onclick=function(){
+	            nowtop-=10;
+	            move()
+            }
+            ttt3.onclick=function(){
+	            nowleft+=10;
+	            nowtop-=10;
+	            move()
+            } 
+            ttt4.onclick=function(){
+	            nowleft-=10;
+	            move()
+            }
+            ttt5.onclick=function(){
+              	nowleft+=10;
+	            move()
+            }
+            ttt6.onclick=function(){
+	            nowleft-=10;
+	            nowtop+=10;
+	            move()
+            } 
+            ttt7.onclick=function(){
+	            nowtop+=10;
+            	move()
+            }
+            ttt8.onclick=function(){
+	            nowleft+=10;
+            	nowtop+=10;
+            	move()
+            }
+            function move(){
+ 	            otuu.style.left=nowleft+'px';
+	            oTuu.style.top=nowtop+'px';
+            }
+		</script>
+	</body>
+</html>

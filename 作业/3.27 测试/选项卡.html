@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{
+			padding:0px;
+			margin: 0px;
+		}
+		ul{
+			width:550px;
+			height: 40px;
+			display: flex;
+			justify-content: space-between;
+			/*margin-top: 100px;*/
+			margin: auto;
+		}
+		ul li{
+			list-style: none;
+			background-color: orange;
+			cursor: pointer;
+			color: white;
+			width: 80px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 14px;
+		}
+		.box{
+			width: 550px;
+			height: 300px;
+			margin: auto;
+			/*border: 1px solid red;*/
+			margin-top: -10px;
+		}
+		.tuu{
+			width: 550px;
+			height: 300px;
+			border: 1px solid black;
+			font-size: 50px;
+			display: none;
+			line-height: 500px;
+			text-align: center;
+		}
+		img{
+			width: 550px;
+			height: 300px;
+			background-size: 100% 100%;
+		}
+		.tl{
+			background-color: sienna;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box0">
+		<ul>
+			<li class="tl">戏命师</li>
+			<li>放逐之刃</li>
+			<li>疾风剑豪</li>
+			<li>无极剑圣</li>
+			<li>皎月女神</li>
+		</ul>
+		 </div>
+		<div class="box">
+			<div class="tuu"  style="display: block;" ><img src="img/01.jpg"></div>
+			<div class="tuu"><img src="img/02.jpg"></div>
+			<div class="tuu"><img src="img/03.jpg"></div>
+			<div class="tuu"><img src="img/04.jpg"></div>
+			<div class="tuu"><img src="img/05.jpg"></div>
+		</div>
+		<script src="js/ jquery.smin.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var ali=document.getElementsByTagName("li");
+			var atuu=document.getElementsByClassName("tuu");
+			for (let i=0;i<ali.length;i++){
+				ali[i].onclick=function(){
+					for (var j=0;j<atuu.length;j++){
+						atuu[j].style.display="none";
+					}
+					atuu[i].style.display="block";
+				}
+			
+			}
+		    $(document).ready(function(){
+	         	$(".box0 li").click(function(){
+	       		    $(".box1 li").removeClass("red");
+	       		        $(this).addClass("tl");
+	         	})
+	        })
+	
+		    $(function(){
+        	$(".box0 li").click(function(){
+        		$(this).addClass("tl").siblings().removeClass("tl");
+        		var index=$(this).index();
+        		console.log(index);
+        		$(".box .tuu").eq(index).show().siblings().hide();
+        	    });
+            })
+		</script>
+	</body>
+</html>

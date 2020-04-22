@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+			padding:0px;
+			margin: 0px;
+		}
+		ul{
+			width:700px;
+			height: 40px;
+			display: flex;
+			justify-content: space-between;
+			margin: auto;
+		}
+		ul li{
+			list-style: none;
+			background-color: green;
+			cursor: pointer;
+			color: white;
+			width: 110px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.box{
+			width: 700px;
+			height: 500px;
+			margin: auto;
+		}
+		.item{
+			width: 695px;
+			height: 500px;
+			border: 2px solid red;
+			font-size: 50px;
+			display: none;
+			line-height: 500px;
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>选项一</li>
+			<li>选项二</li>
+			<li>选项三</li>
+			<li>选项四</li>
+			<li>选项五</li>
+		</ul>
+		<div class="box">
+			<div class="item" style="display: block;">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+		</div>
+		
+		<script type="text/javascript">
+			var allli=document.getElementsByTagName("li");
+			var alllii=document.getElementsByClassName("item");
+			for (let i=0;i<allli.length;i++){
+				allli[i].onclick=function(){
+					for (var j=0;j<alllii.length;j++){
+						alllii[j].style.display="none";
+					}
+					alllii[i].style.display="block";
+				}
+			}
+			
+			/*var allli=document.getElementsByTagName("li");
+			var alllii=document.getElementsByClassName("item");
+			
+			for (var i=0;i<allli.length;i++){
+				function(m){
+				allli[m].onclick=function(){
+					for (var j=0;j<alllii.length;j++){
+						alllii[j].style.display="none";
+					}
+					alllii[m].style.display="block";
+				}
+			}
+			}*/
+		</script>
+	</body>
+</html>

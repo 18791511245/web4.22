@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		    var obj={
+				"name":"礼拜二",
+				"age":18,
+				"sex":"男"
+				"jiehun":false;
+			}
+			var obj1={
+				"name":"张三",
+				"age":18,
+				"sex":"男"
+			}
+			var obj2={
+				"name":"小木",
+				"age":15,
+				"sex":"女"
+			}
+			/*function xs(){
+				alert(this.name);
+			}
+			xs.call(obj2)*/
+			
+			function xsx(a,b,c){
+				console.log(this.name);
+				console.log(a+b+c);
+			}
+			xsx.call(obj,2,3,4);
+			
+		</script>
+	</body>
+</html>

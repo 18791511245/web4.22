@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            width: 300px;
+            height: 100px;
+            background: orchid;
+        }
+        li p{
+            width: 300px;
+            height: 40px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        var obj={
+            name:"张三",
+            age:20
+
+        }
+        var str=`<li>
+                   <p>${obj.name}</p>
+                   <p>${obj.age}</p>
+
+        </li>
+        `
+        document.querySelector("ul").innerHTML=str;
+    </script>
+</body>
+</html>

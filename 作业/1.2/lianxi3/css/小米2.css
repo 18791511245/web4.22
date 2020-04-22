@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.s1{
+	width: 1226px;
+	height: 460px;
+	margin: 50px auto;
+	background-color: mediumaquamarine;
+}
+.s2{
+	width: 234px;
+	height: 460px;
+	background-color: #9B9A9E;
+}
+
+.s3{
+	height: 420px;
+	width: 234px;
+	overflow: hidden;
+	margin-top: 20px;
+	
+}
+
+.s3 li{
+	height: 42px;
+	width: 234px;
+	list-style: none;
+	line-height: 42px;
+	color: white;
+	font-size: 14px;
+	
+	text-align: 20px;
+}
+.s3 li p{
+	margin-left: 30px;
+	display: inline-block;
+}
+.s3 li:hover{
+	background-color: sandybrown;
+	cursor: pointer;
+}
+
+.s3 li span{
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+}

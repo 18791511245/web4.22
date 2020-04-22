@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			div{
+				width: 60px;
+				height: 60px;
+				background-color: red;
+				position: absolute;
+				top: 100px;
+				left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript">
+			obox=document.getElementById("box");
+			var left=100;
+			var top=100;
+			var width=80;
+			setInterval(function(){
+				left+=10;
+				top+=8;
+				width+=3;
+				obox.style.left=left+"px";
+				obox.style.top=top+"px";
+				obox.style.width=width+"px";
+			},200);
+		</script>
+	</body>
+</html>

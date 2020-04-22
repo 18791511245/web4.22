@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="ff">星期天</p>
+		<tr>
+				<td><input type="button" id="zd" value="增大" /></td>
+				<td><input type="button" id="jx" value="减小" /></td>
+		</tr>
+		<script type="text/javascript">
+			var ff=document.getElementById("ff");
+			var zd=document.getElementById("zd");
+			var jx=document.getElementById("jx");
+			var fontsize=20;
+			
+			zd.onclick=function(){
+				fontsize+=2;
+				move()
+			}
+			jx.onclick=function(){
+				fontsize-=2;
+				move()
+			}
+			function move(){
+				ff.style.fontSize=fontsize+"px";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,265 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.q1{
+	width: 1200px;
+	height: 70px;
+	/*background-color: burlywood;*/
+	margin: auto;	
+}
+.q2{
+	width: 125px;
+	height: 70px;
+	background-image: url(../img/lo.png);
+	float: left;
+	cursor: pointer;
+}
+.q3{
+	height: 70px;
+}
+.q3 li{
+	
+	list-style: none;
+	float: right;
+	line-height: 70px;
+	font-size: 14px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.q3 li:hover{
+	font-weight: bold;
+}
+
+.q4 img{
+	width: 100%;
+	height: 384px;
+}
+
+.q5{
+	width: 1200px;
+	height:50px;
+	margin: auto;
+	
+}
+
+.q6{
+	width: 500px;
+	height: 50px;
+	margin-top: 37.5px;
+	float: left;
+}
+.q8{
+	width: 50px;
+	height: 25px;
+	background-color: #3E3A37;
+	/*margin-left: 11px;
+	margin-top: 37.5px;*/
+	border-radius: 5px;
+	float: left;
+    text-align: center;
+    color: white;
+}
+
+
+.q6 li{
+	list-style: none;
+	float: left;
+	/*display: inline-block;*/
+	line-height: 24px;
+	font-size: 14px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.q9{
+	float: right;
+	margin-top: 40.5px;
+}
+
+.q10{
+	width: 50px;
+	height: 22px;
+	font-size: 14px;
+	background-color: darkorange;
+	color: white;
+	text-align: center;
+	float: right;
+	z-index:auto;
+	cursor: pointer;
+}
+.q11{
+	float: right;
+	height: 18px;
+	margin-right: -1px;
+	
+}
+
+
+.w{
+	width: 1200px;
+	height: 380px;
+	display: flex;
+	justify-content: flex-start;
+	margin:48px auto;
+	/*background-color: antiquewhite;*/
+	/*margin-top: -20px;*/
+	/*position: relative;*/
+}
+
+.w1{
+	width: 265px;
+	height: 380px;
+	background-color: #FAFAFA;
+	box-shadow: 0px 0px 8px #ccc;
+	/*float: left;*/
+	/*margin-left: -500px;*/
+}
+.w2{
+	width: 265px;
+	height: 380px;
+	background-color: #FAFAFA;
+	box-shadow: 0px 0px 8px #ccc;
+	/*float: left;*/
+	margin-left: 48px;
+}
+.w3{
+	width: 265px;
+	height: 380px;
+	background-color: #FAFAFA;
+	box-shadow: 0px 0px 8px #ccc;
+	margin-left: 48px;
+	/*float: left;*/
+}
+.w4{
+	width: 265px;
+	height: 380px;
+	background-color:#FAFAFA;
+	box-shadow: 0px 0px 8px #ccc;
+	margin-left: 50px;
+	/*float: right;*/
+}
+.w img{
+	width: 265px;
+	height: 180px;
+	/*background-repeat: no-repeat;*/
+	background-size: 100% 100%;
+	margin-top: 40px;
+	/*float: left;*/
+}
+
+.w5{
+	width: 265px;
+	height: 110px;
+	/*background-color: red;*/
+	/*float: left;*/
+	margin-top: 46px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.w5 p{
+	margin-top: 10px;
+	margin-left: 20px;
+	line-height: 25px;
+}
+.w5 span{
+	/*margin-top: 30px;*/
+	margin-left: 20px;
+	color: gray;
+	font-size: 12px;
+}
+.w5 h4{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.w5:hover{
+	background-color: black;
+	color: white;
+	
+}
+.w5:hover .e{
+	color: white;
+}
+
+
+.r{
+	width: 100%;
+	height: 360px;
+	background-color: black;
+	margin-top: 80px;
+	overflow: hidden;
+}
+.r1{
+	width: 1200px;
+	height:360px;
+	/*background-color: aquamarine;*/
+
+	margin: auto;
+}
+
+.r2{
+	width: 300px;
+	height: 310px;
+	/*background-color: darkkhaki;*/
+	border-bottom: 1px solid white;
+	float: left;
+}
+
+
+.r10 ul{
+	list-style: none;
+	font-size: 14px;
+	color: white;
+	line-height:30px;
+	margin-top: 15px;
+	margin-left: 5px;
+	
+}
+/*.r10 ul p{
+	height: 20px;
+}*/
+.r10 ul span:hover{
+	cursor: pointer;
+	color: indianred;
+}
+
+.r11{
+	margin-top: 10px;
+}
+
+.r12{
+	width: 70px;
+	height: 30px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.t{
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	color: white;
+}
+.t1{
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	color: white;
+	float: right;
+}
+
+.t1 span:hover{
+	cursor: pointer;
+	color: indianred;
+}
+
+.r12:hover{
+	background-color: aliceblue;
+}

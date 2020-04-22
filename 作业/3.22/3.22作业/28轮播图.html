@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.box{
+				width: 500px;
+				overflow: auto;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<img src="img/01.jpg" id="tu1" width="400" height="300"/>
+		<!--<img src="img/012.jpg" id="tu2" width="400" height="300"/>-->
+		<input type="button" name="" id="" value="上" />
+		
+		<script type="text/javascript">
+			var tu1=document.getElementById("tu1");
+			var index=1;
+			function auto(){
+				index++;
+				if (index>3){
+					index=1;
+				}
+				tu1.src="img/o"+index+".jpg";
+			}
+			setInterval(auto,1000);
+		</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+				
+			}
+			.qq1{
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+			    padding: 50px;
+			    border: 8px solid red;
+			}
+			.qq2{
+				width: 280px;
+				height: 280px;
+				padding: 40px;
+				background-color: salmon;
+				position: relative;
+				
+			}
+			.qq3{
+				width: 180px;
+				height: 180px;
+				padding: 40px;
+				border: 5px solid blue;
+			}
+			p{
+				width: 40px;
+				height: 40px;
+				border: 6px solid green;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="qq1">
+			<div class="qq2">
+				<div class="qq3">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			qqq=document.getElementsByTagName("P")[0];
+//			alert(qqq.offsetParent.className);
+			alert(qqq.offsetLeft)
+			alert(qqq.offsetTop)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title><style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			
+			.box{
+				width: 700px;
+				height: 40px;
+				background-color: aquamarine;
+				margin: 50px auto;
+			}
+			.box li{
+				width: 100px;
+				height: 40px;
+				background-color: aliceblue;
+				list-style: none;
+				/*display: inline-block;*/
+				float: left;
+				text-align: center;
+				line-height: 40px;
+				cursor: pointer;
+				border-radius: 7px;
+				margin-left: 10px;
+			}
+			.box li:hover{
+				background-color: sandybrown;
+				color: white;
+			}
+			
+			.box li .nav{
+				width: 100px;
+				display: none;
+				background-color: darkcyan;
+			}
+			.box li .nav p{
+				width: 100px;
+				height: 40px;
+				border-bottom: 1px dashed #fff000;
+				
+			}
+			.box li:hover .nav{
+				display: block;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>
+					导航一
+					<div class="nav">
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+					</div>
+				</li>
+				<li>
+					导航一
+					<div class="nav">
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						<p>下拉列表</p>
+						
+					</div>
+				</li>
+				<li>导航一</li>
+				<li>导航一</li>
+				<li>导航一</li>
+				<li>导航一</li>
+			</ul>
+		</div>
+	</body>
+</html>

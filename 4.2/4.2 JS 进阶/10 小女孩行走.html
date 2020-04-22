@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 79px;
+				height: 108px;
+				background-position: 0px -216px;
+				background:url(img/girl.png) no-repeat;
+				position: absolute;
+				left: 0px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		 /*   function Gril(top,left){
+		    	this.top=top;
+		    	this.left=left;
+		    	this.buzi=0;
+		    	this.timer=null;
+		    	this.init=function(){
+		    		this.dom=document.createElement("div");
+		    		document.body.appendChild(this.dom);
+		    		this.dom.style.left=this.left+"px";
+		    		this.dom.style.left=this.top+"px";
+		    	}
+		    	this.xingzou=function(){
+		    		var self=this;
+		    		this.timer=setInterval(function(){
+		    			self.left++;
+		    			self.buzi++;
+		    			if (self.buzi>7){
+		    				self.buzi=0;
+		    			}
+		    			if (self.left>1000){
+		    				self.xs();
+		    			}
+		    			self.dom.style.left=self.left+"px";
+		    			self.dom.style.backgroundPosition=-79*sele.buzi+"px -216";
+		    		},20)
+		    	}
+		    	this.xs=function(){
+		    		clearInterval(this.timer);
+		    		document.body.removeChild(this.dom);
+		    	}
+		    	this.init();
+		    	this.xingzou();
+		    	
+		    }
+		    Gril(200,100):
+		    setInterval(function(){
+		    		new Gril(Math.random()*400,100)
+		    	},1000)*/
+		    
+		    
+		    
+		    function Gril(top,left){
+		    	this.top=top;
+		    	this.left=left;
+		    	this.buzi=0;
+		    	this.timer=null;
+		    	this.init=function(){
+		    		this.dom=document.createElement("div");
+		    		document.body.appendChild(this.dom);
+		    		this.dom.style.left=this.left+"px";
+		    		this.dom.style.left=this.top+"px";
+		    	}
+		    	this.xingzou=function(){
+		    		var self=this;
+		    		this.timer=setInterval(function(){
+		    			self.left++;
+		    			self.buzi++;
+		    			if (self.buzi>7){
+		    				self.buzi=0;
+		    			}
+		    			if (self.left>1000){
+		    				self.xs();
+		    			}
+		    			self.dom.style.left=self.left+"px";
+		    			self.dom.style.backgroundPosition=-79*sele.buzi+"px -216";
+		    		},20)
+		    	}
+		    	this.xs=function(){
+		    		clearInterval(this.timer);
+		    		document.body.removeChild(this.dom);
+		    	}
+		    	this.init();
+		    	this.xingzou();
+		    	
+		    }
+		    Gril(200,100);
+		    setInterval(function(){
+		    		new Gril(Math.random()*400,100)
+		    	},1000)
+		</script>
+	</body>
+</html>

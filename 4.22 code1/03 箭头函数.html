@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr=[1,2,3,4];
+        // arr.forEach(function(k){
+        //     console.log(k);
+        // })
+        // arr.forEach(k=>console.log(k));
+        // arr.forEach((k, v) => {
+
+        //     console.log(k)
+        // })
+        // var fn=function(x){
+        //     return x*x;
+        // }
+        // var fn=x=>x*x;
+        // console.log(fn(3));
+        // var fn1=()=>10;
+        // console.log(fn1());
+        var obj={
+            brith:1999,
+            getAge:function(){
+                console.log(this.brith);
+                var self=this;
+                var fn=function(){
+                    return new Date().getUTCFullYear()-self.brith;
+                }
+                return fn();
+            }
+        }
+        console.log(obj.getAge());
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var arr=[11,33,55];
+			console.log(arr.__proto__.__proto__.constructor);
+			function Dog(){
+				
+			}
+			console.log(Dog.__proto__.constructor);
+			Function.prototype.aa=function(){
+				alert("星期四");
+			}
+			Dog.aa();*/
+			var arr=[45,75,26,28,94,61,43,59];
+			console.log(arr.__proto__.constructor);
+            Array.prototype.max=function(){
+            	var max=-Infinity;
+            	for(var i=0;i<this.length;i++){
+            		if (this[i]>max){
+            			max=this[i];
+            			
+            		}
+            	}
+            	return max;
+            }
+            console.log(arr.max());
+            
+            
+           /*var str=new String("你好啊");
+           console.log(str.toString());*/
+		</script>
+	</body>
+</html>

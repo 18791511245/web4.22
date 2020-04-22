@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="clock">
+			
+		</div>
+		<script type="text/javascript" src="">
+			(function(){
+				var divClock=document.getElementById('clock');
+//				console.log(divClock)
+                function formatTime(nem){
+                	return (num>=10?"":"0")+num;
+                }
+                function showTime(){
+                	var date=new Date();
+//              	console.log()
+                	divClock.innerHTML=formatTime(date.getHours())+':'+formatTime(date.getMinutes())+':'+formatTime(date.get);
+                }
+                showTime()
+//              function init(){
+//              	setInterval(函数(函数的名字),时间);
+                	setInterval(showTime,1000);
+                }
+			})()
+		</script>
+	</body>
+</html>

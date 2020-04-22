@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="点点" />
+		<script type="text/javascript">
+			var oinput=document.getElementsByTagName("input")[0];
+			var lock=true;
+			
+			oinput.onclick=function(){
+				if (!lock) returen;
+				console.log(math.radom());
+				lock=false;
+				setTimeout(function(){
+					lock=true;
+				},1000)
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 60px;
+				height: 60px;
+				background-color: aqua;
+				position: absolute;
+				left: 200px;
+				top: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript">
+			var oox=document.getElementById("box");
+			var left=200;
+			var timer;
+			timer=setInterval(function(){
+				left+=20;
+				if(left>800){
+					left=800;
+					clearInterval(timer);
+				}
+				oox.style.left=left+"px";
+			},50)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.nav{
+				width: 1000px;
+				height: 40px;
+				margin: 50px auto;
+			}
+			.nav ul{
+				list-style: none;
+			}
+			.nav ul li{
+				float: left;
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: sandybrown;
+				position: relative;
+			}
+			.dropbox{
+				position: absolute;
+				top: 40px;
+				left: 0;
+				display: none;
+			}
+			.inner{
+				background-color: aquamarine;
+			}
+			.dropbox a{
+				display: block;
+				height: 30px;
+			}
+			.nav ul li a{
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="#">栏目名称</a></li>
+				<li>
+					<a href="#">公司新闻</a>
+					<div class="dropbox">
+						<div class="inner">
+							
+						
+						<ul>
+							<li><a href="#">111栏目名称</a></li>
+							<li><a href="#">222栏目名称</a></li>
+							<li><a href="#">333栏目名称</a></li>
+							<li><a href="#">444栏目名称</a></li>
+						</ul>
+					</div>
+					</div>
+				</li>
+				
+				<li><a href="#">栏目名称</a></li>
+				
+				<li>
+					<a href="#">栏目名称</a>
+					<div class="dropbox">
+						<div class="inner">
+							
+						
+						<ul>
+							<li><a href="#">111栏目名称</a></li>
+							<li><a href="#">222栏目名称</a></li>
+							<li><a href="#">333栏目名称</a></li>
+							<li><a href="#">444栏目名称</a></li>
+						</ul>
+					</div>
+					</div>
+				</li>
+				
+				<li><a href="#">栏目名称</a></li>
+				
+				<li><a href="#">栏目名称</a></li>
+				
+			</ul>
+		</div>
+		<script src="js/ jquery.smin.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*$("li").mouseenter(function(){
+				$(this).children(".dropbox").slideDown();
+			})
+			$("li").mouseenter(function(){
+				$(this).children(".dropbox").slideup();
+			})*/
+			
+			$("li").mouseenter(function(){
+				$(this).children(".dropbox").slideDown();
+			})
+			$("li").mouseenter(function(){
+				$(this).children(".dropbox").slideup();
+			})
+		</script>
+	</body>
+</html>
