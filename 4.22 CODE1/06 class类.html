@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function point(x,y){
+        //     this.x=x;
+        //     this.y=y;
+        // }
+        // point.prototype.fun=function(){
+        //     return "("+this.x+","+this.y+")";
+        // }
+        // var point1=new point(20,30);
+        // console.log(point1.fun());
+
+        class diypoint{
+         constructor(x,y){
+            this.x=x;
+            this.y=y;
+         }
+         fun(){
+             return "("+this.x+","+this.y+")";
+         }
+        }
+        var diy=new diypoint(20,30);
+        console.log(diy.fun());
+    </script>
+</body>
+</html>

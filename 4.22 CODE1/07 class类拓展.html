@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class people{
+            constructor(name){
+                this.name=name;
+            }
+            showname(){
+                console.log("我叫:"+this.name);
+            }
+        }  
+        class programmer extends people {
+            constructor(name,age){
+                super(name);
+                this.age=age;
+            }
+            showage(){
+                console.log("我今年："+this.age+"岁");
+            }
+        }
+        var people1=new people("秦");
+        var programmer1=new programmer("楚",20);
+        people1.showname();
+        programmer1.showname();
+        programmer1.showage();
+    </script>
+</body>
+</html>

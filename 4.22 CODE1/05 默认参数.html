@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function fun(name){
+        //     name=name||"马小二";
+        //     console.log(name);
+        // }
+       
+        // fun();
+        // fun("放马娃");
+        // function func(name="星期三"){
+        //     console.log(name)
+        // }
+        // func();
+        // func("星期四");
+        // function funct(a,...reset){
+        //     console.log(a);
+        //     console.log(reset);
+        // }
+        // funct(11);
+        // funct(1,2,3,4);
+        var arr=["秦","楚","燕","韩","赵","魏","齐"];
+        function fun1(a,b,c,d,e,f,g){
+            console.log(a,b,c,d,e,f,g);
+        }
+        fun1(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
+        fun1.apply(null,arr);
+        fun1.call(null,arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
+        fun1(...arr);//映射
+               
+    </script>
+</body>
+</html>
