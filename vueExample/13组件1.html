@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+      <Hello-world></Hello-world>
+      <Hello-World></Hello-World>
+      <Hello-World></Hello-World>
+    </div>
+    <template id="hezi">
+        <div>
+            <h1>名字:<font color="blue"  @click="go">{{name}}</font></h1>
+            <ul v-for="(item,index) in shige" :key="index">
+                <li>{{item}}</li>
+            </ul>
+        </div>
+    </template>
+    <script>
+        let vm=new Vue({
+             el:"#box",
+             data:{
+                 message:'星期天好天气',
+             },
+             components:{
+                "HelloWorld":{
+                    template:"#hezi",
+                    data(){
+                        return{
+                            name:"这是我的名字",
+                            shige: ["弃我去者","昨日之日不可留","乱我心者","今日之日多烦忧"]
+                        }
+                    },
+                    methods:{
+                        go(){
+                            this.name="中文"
+                        }
+                    },
+                }
+             }
+        })
+    </script>
+</body>
+</html>

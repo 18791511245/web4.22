@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <ul v-for="k in shige">
+           <li>{{k}}</li>
+        </ul>
+        <ul v-for="(k,x) in shige" :key=x>
+            <li>{{k}}</li>
+         </ul>      
+    </div>
+    <script>
+        let vm=new Vue({
+             el:"#box",
+             data:{
+                 shige:["弃我去者","昨日之日不可留","乱我心者","今日之日多烦忧"]
+             }
+        })
+    </script>
+</body>
+</html>

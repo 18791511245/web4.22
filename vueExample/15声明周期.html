@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        {{msg}}
+        <input type="button" value="更新" onclick="upbtn()" />
+        <input type="button" value="更新" onclick="destroy()" />
+    </div>
+    <script>
+        let vm=new Vue({
+            el:"#box",
+            data:{
+               msg:"实例实力"
+            },
+            beforeCreate(){
+               alert("实例创建前")
+            },
+            created(){
+                alert("实例创建完成")
+            },
+            beforeMount(){
+                alert("实例挂载前")
+            },
+            mounted(){
+                alert("实例挂载完成")
+            },
+            beforeupdate(){
+                alert("更新时")
+            },
+            updated(){
+                alert("实例更新后")
+            },
+            beforeDestrcy(){
+                alert("销毁前")
+            },
+            destroyed(){
+                alert("销毁完成");           }
+        })
+        function upbtn(){
+            vm.msg="我改变了"
+        }
+        function destroy(){
+            vm.$destroy()
+        }
+    </script>
+</body>
+</html>

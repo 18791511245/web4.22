@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+          <div v-if="seen">你好啊</div> 
+          <div v-else>我很好</div> 
+          <h2 v-if="type==='A'">我是A啊</h2>
+          <h2 v-else-if="type==='B'">我是B哎</h2>
+          <h2 v-else-if="type==='C'">我是C哦</h2>
+          <h2 v-else>我是啥啊 </h2>
+    </div>
+    <script>
+        let vm=new Vue({
+             el:"#box",
+             data:{
+                 message:'',
+                 seen:true,
+                 type:'A',
+             }
+        })
+    </script>
+</body>
+</html>

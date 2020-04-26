@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+         <hello>
+             <div slot="one">我替换slot第一个位置</div>
+             <div slot="two">我替换slot第二个位置</div>
+             <div slot="three">我替换slot第三个位置</div>
+             <h1>啊实打实的</h1>
+         </hello>
+    </div>
+    <!-- <template id="conter">
+        <div>
+           <span>首页</span>
+           <slot name="one"><h3>我是星期一</h3></slot>
+           <slot name="two"><h3>我是星期二</h3></slot>
+           <slot name="three"><h3>我是星期三</h3></slot>
+        </div>
+    </template> -->
+    <script type="x-template" id="conter">
+         <div>
+            <span>首页</span>
+            <slot name="one"><h3>我是星期一</h3></slot>
+            <slot name="two"><h3>我是星期二</h3></slot>
+            <slot name="three"><h3>我是星期三</h3></slot>
+         </div>
+        </script>
+    <script>
+    Vue.component('hello',{
+        template:"#conter"
+        // `
+        // <div>
+        //    <span>首页</span>
+        //    <slot name="one"><h3>我是星期一</h3></slot>
+        //    <slot name="two"><h3>我是星期二</h3></slot>
+        //    <slot name="three"><h3>我是星期三</h3></slot>
+        // </div>
+        // `
+    })
+    new Vue({
+        el:"#box",
+
+    })
+    </script>
+</body>
+</html>

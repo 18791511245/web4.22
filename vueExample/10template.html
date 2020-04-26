@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+       <h2><font color="red">{{message}}</font></h2>
+    </div>
+    <script type="x-template" id="content" > 
+    <div> 
+        hollo:
+        <h2><font color="yellow">{{message}}</font></h2>
+    </div>
+    </script>
+    <script>
+        let vm=new Vue({
+             el:"#box",
+             data:{
+                 message:'星期天好天气',
+             },
+             template:"#content"
+        })
+    </script>
+</body>
+</html>
