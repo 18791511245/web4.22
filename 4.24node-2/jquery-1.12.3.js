@@ -50,6 +50,7 @@
 		slice: function() {
 			return this.pushStack(e.apply(this, arguments))
 		},
+		
 		first: function() {
 			return this.eq(0)
 		},
