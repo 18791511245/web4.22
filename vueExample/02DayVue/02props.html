@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+       <hello-world :title="proplist.title" :nums="proplist.nums" :isLikes="proplist.isLikes"
+       :obj="proplist.obj"></hello-world>
+
+    </div>
+    <template id="content">
+        <div>
+            <h1>{{title}}</h1>
+            <h2>{{nums}}</h2>
+            <h3>{{isLikes}}</h3>
+            <h3>{{moreApple}}</h3>
+            <h2>{{obj}}</h2>
+            <h1>{{callback}}</h1>
+        </div>
+    </template>
+    <script>
+        Vue.component('HelloWorld',{
+            props:{
+                title:String,
+                nums:Number,
+                isLikes:false,
+                moreApple:Array,
+                obj:Object,
+                callback:{
+                    validator:function(val){
+                        return val;
+                    }
+                },
+            },
+            template:"#content"
+        })
+        new Vue({
+            el:"#box",
+            data:{
+                proplist:{
+                    title:"今天是星期一哦",
+                    nums:100,
+                    isLikes:true,
+                    obj:{
+                        a:123,
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

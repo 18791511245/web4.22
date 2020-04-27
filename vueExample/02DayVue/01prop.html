@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+       <hello-world name="一休" hobby="玩游戏" obj="{aa:'abcde'}"></hello-world>
+
+    </div>
+    <template id="content">
+        <div>
+            <h1>{{name}}</h1>
+            <h2>{{hobby}}</h2>
+            <h3>{{obj}}</h3>
+        </div>
+    </template>
+    <script>
+        Vue.component('HelloWorld',{
+            props:["name","hobby","obj"],
+            template:"#content"
+        })
+        new Vue({
+            el:"#box"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div id="box">
+        {{news}}
+        <input type="button" value="获取数据" @click="getdata()">
+    </div>
+
+    <script>
+      new Vue({
+           el:"#box",
+           data:{
+              news:"君不见，高堂明镜悲白发，朝如青丝暮成雪"
+           },
+           methods:{
+               getdata(){
+                //    promise.then(箭头函数)模板引擎class类......es6的新特性
+                // promise.then(function(res){console.log(res)})
+                // promise.then(function(res)=>{console.log(res)})
+                this.$http.get("http://route.showapi.com/905-1",{
+                    params:{
+                        showapi_appid:'169840',
+                        count:15,
+                        showapi_sigm:'08ffb83b9f9b40b9bfd04f66a586656f',
+                    }
+                }).then(res=>{
+                    console.log(res);
+                })
+                 }
+           },
+           
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div id="box">
+        {{news}}
+        <input type="text" v-model="Bdata" @keyup="getbddata()">
+        <ul v-for="(item,index) in Bdlistdata" :key="index">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+
+    <script>
+      new Vue({
+           el:"#box",
+           data:{
+              news:"君不见，高堂明镜悲白发，朝如青丝暮成雪",
+              Bdata:'',
+             Bdlistdata:[],
+           },
+           
+           methods:{
+               getbddata(){
+                  this.$http.jsonp("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",{
+                      params:{
+                          wd:this.Bdata
+                      },
+                      jsonp:'cb',
+                  }).then(res=>{
+                      console.log(res)
+                      this.Bdlistdata=res.body.s;
+                  })
+               }
+           }
+           
+       })
+    </script>
+</body>
+</html>

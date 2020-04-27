@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+       <h2>{{aa}}</h2>
+       <h2>{{bb}}</h2>
+
+    </div>
+    <template id="content">
+        <div>
+            <h1>{{name}}</h1>
+            <h2>{{hobby}}</h2>
+            <h3>{{obj}}</h3>
+        </div>
+    </template>
+    <script>
+        let vm=new Vue({
+            el:"#box",
+            data:{
+                aa:111,
+                bb:222,
+            }
+        })
+        vm.$watch("aa",function(){
+            alert("aa值发生了变化");
+            this.bb=this.aa+20;
+        })
+        document.onclick=function(){
+            vm.aa=123;
+        }
+    </script>
+</body>
+</html>
