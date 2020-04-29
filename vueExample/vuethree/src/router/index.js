@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Page from '@/components/page'
 import Work from '@/components/work'
 import Frist from '@/components/frist'
+import Datalist from '@/components/datalist'
+import Sort from '@/components/sort'
 const User={
   template:`<div>
   <h3><>font color="green> 我是父组件{{￥route.params.id}}</font></h3>
@@ -58,5 +60,15 @@ export default new Router({
         }
       ]
     },
+    {
+      path:'/getdata',
+      name:'Datalist',
+      component:Datalist
+    },
+    {
+      path:'/sort',
+      name:'Sort',
+      component:Sort
+    }
      ]
 })
