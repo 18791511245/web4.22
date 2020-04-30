@@ -6,6 +6,7 @@ import Work from '@/components/work'
 import Frist from '@/components/frist'
 import Datalist from '@/components/datalist'
 import Sort from '@/components/sort'
+import Count from '@/components/count'
 const User={
   template:`<div>
   <h3><>font color="green> 我是父组件{{￥route.params.id}}</font></h3>
@@ -69,6 +70,11 @@ export default new Router({
       path:'/sort',
       name:'Sort',
       component:Sort
+    },
+    {
+      path:'/count',
+      name:'Count',
+      component:Count
     }
      ]
 })
